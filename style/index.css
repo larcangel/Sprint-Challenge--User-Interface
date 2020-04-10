@@ -408,6 +408,10 @@ footer nav a {
     margin: 0;
     display: block;
   }
+  nav a:hover {
+    background: gray;
+    color: black;
+  }
   .logo {
     width: 100%;
     display: flex;
