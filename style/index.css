@@ -135,7 +135,7 @@ table {
 
 .logo {
   max-width: 100%;
-  padding-right: 2rem;
+  padding-left: 2rem;
 }
 nav a {
   color: black;
@@ -153,8 +153,12 @@ nav {
   justify-content: center;
 }
 .image {
+  /* align-items: center;
+  padding: 2rem 9.5rem; */
+  height: 30vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 2rem 9.5rem;
 }
 html,
 body {
@@ -392,4 +396,45 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+/*mobile design*/
+@media (max-width: 500px) {
+  nav a {
+    color: #808686;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 0.5em 1.25em;
+    margin: 0;
+    display: block;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    justify-items: center;
+  }
+  .container,
+  .top-content,
+  .text-container {
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+  }
+  .boxes {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-left: 1rem;
+  }
+  .middle-content div {
+    width: 50%;
+    justify-content: center;
+  }
+  .top-content,
+  .text-container {
+    width: 100%;
+  }
 }
